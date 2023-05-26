@@ -1,0 +1,310 @@
+{
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+  "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "[bibtex]": {
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[latex]": {
+    // スニペット補完中にも補完を使えるようにする
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.wordWrap": "on"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
+  },
+  // ---------- Language ----------
+  "[tex]": {
+    // スニペット補完中にも補完を使えるようにする
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+  "code-runner.executorMap": {
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "ahk": "autohotkey",
+    "applescript": "osascript",
+    "autoit": "autoit3",
+    "bat": "cmd /c",
+    "c": "cd $dir && gcc -fexec-charset=CP932 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "clojure": "lein exec",
+    "coffeescript": "coffee",
+    "cpp": "g++ $fileName -o $fileNameWithoutExt  -fexec-charset=CP932 -std=c++1z && $fileNameWithoutExt",
+    "crystal": "crystal",
+    "csharp": "scriptcs",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "dart": "dart",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fsharp": "fsi",
+    "go": "go run",
+    "groovy": "groovy",
+    "haskell": "runhaskell",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "javascript": "node",
+    "julia": "julia",
+    "kit": "kitc --run",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "lisp": "sbcl --script",
+    "lua": "lua",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "ocaml": "ocaml",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "perl": "perl",
+    "perl6": "perl6",
+    "php": "php",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "python": "python -u",
+    "r": "Rscript",
+    "racket": "racket",
+    "ruby": "ruby",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "sass": "sass --style expanded",
+    "scala": "scala",
+    "scheme": "csi -script",
+    "scss": "scss --style expanded",
+    "shellscript": "bash",
+    "swift": "swift",
+    "typescript": "ts-node",
+    "v": "v run",
+    "vbscript": "cscript //Nologo"
+  },
+  "code-runner.runInTerminal": true,
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'UDEV Gothic NF', HackGenNerd, 'Myrica MM', Consolas, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.side": "left",
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "isort.args": ["--profile", "black"],
+  "isort.check": true,
+  "isort.path": ["isort"],
+  "javascript.suggest.paths": false,
+  // ---------- LaTeX Workshop ----------
+  // 使用パッケージのコマンドや環境の補完を有効にする
+  "latex-workshop.intellisense.package.enabled": true,
+  // 生成ファイルを削除するときに対象とするファイル
+  // デフォルト値に "*.synctex.gz" を追加
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi"
+  ],
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  // 生成ファイルを "out" ディレクトリに吐き出す
+  //"latex-workshop.latex.outDir": "out",
+  // ビルドのレシピ
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "ptex2pdf",
+      "tools": ["ptex2pdf"]
+    },
+    {
+      // ここから追記
+      "name": "latexmk (uplatex)",
+      "tools": ["latexmk-uplatex"]
+    }, // ここまで追記
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    }
+  ],
+  // ビルドのレシピに使われるパーツ
+  "latex-workshop.latex.tools": [
+    {
+      "name": "ptex2pdf",
+      "command": "ptex2pdf",
+      "args": ["-l", "-ot", "-kanji=utf8 -synctex=1", "%DOC%"]
+    },
+    {
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdfdvi",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "env": {},
+      // ここから追記
+      "name": "latexmk-uplatex"
+    }, // ここまで追記
+    {
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "env": {},
+      "name": "latexmk"
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "markdown.extension.preview.autoShowPreviewToSide": true,
+  "markdown.marp.exportType": "html",
+  "markdown.suggest.paths.enabled": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "pasteImage.basePath": "${currentFileDir}/images/${currentFileNameWithoutExt}",
+  "python.analysis.extraPaths": [
+    "/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages"
+  ],
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.condaPath": "conda",
+  "python.formatting.autopep8Args": [
+    "--ignore",
+    "E50",
+    "--max-line-length",
+    "120",
+    "--aggressive"
+  ],
+  "python.formatting.blackArgs": ["--line-length=119"],
+  "python.formatting.provider": "black",
+  "python.linting.flake8Args": [
+    "--ignore=E203, W503",
+    "--max-complexity=10",
+    "--max-line-length=119"
+  ],
+  "python.linting.flake8CategorySeverity.E": "Warning",
+  "python.linting.flake8CategorySeverity.F": "Warning",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyArgs": [
+    "--warn-return-any",
+    "--no-implicit-optional",
+    "--disallow-untyped-calls",
+    "--disallow-untyped-defs",
+    "--ignore-missing-imports",
+    "--follow-imports=skip"
+  ],
+  "python.linting.mypyCategorySeverity.error": "Information",
+  "python.linting.mypyEnabled": true,
+  "terminal.integrated.defaultProfile.windows": "nyagos",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt": {
+      "args": [],
+      "icon": "terminal-cmd",
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ]
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
+    },
+    "nu": {
+      "path": "nu"
+    },
+    "nyagos": {
+      "path": "nyagos"
+    }
+  },
+  "typescript.suggest.paths": false,
+  "vsnotes.defaultNoteName": "",
+  "vsnotes.defaultNotePath": "~/OneDrive/VSNotes",
+  "vsnotes.defaultNoteTitle": "{title}{dt}.{ext}",
+  "vsnotes.templates": ["tags", "marp", "mymeeting"],
+  "vsnotes.tokens": [
+    {
+      "description": "Insert formatted datetime.",
+      "format": "YYYYMMDD",
+      "token": "{dt}",
+      "type": "datetime"
+    },
+    {
+      "description": "Insert note title from input box.",
+      "format": "Untitled",
+      "token": "{title}",
+      "type": "title"
+    },
+    {
+      "description": "Insert file vsnotes.",
+      "format": "md",
+      "token": "{ext}",
+      "type": "extension"
+    }
+  ],
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.tree.indent": 25,
+  "workbench.tree.renderIndentGuides": "always",
+  "latex-workshop.latex.autoClean.run": "onBuilt"
+}
